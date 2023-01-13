@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
+        .screen {
+            background-color: green;
+        }
+
         table {
             position: absolute;
             top: 50%;
@@ -18,12 +22,44 @@
             text-align: center;
             background-color: lightgray;
         }
+
+        .numbers {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            
+        }
+
+        .result {
+            height: 50%;
+            font-size: 1.4em;
+            border: 1px solid black;
+            background-color: white;
+            padding: 5px 0px;
+            margin: auto 10px;
+        }
+
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
 </head>
 <body>
+
+
     <table>
+        <tr class="screen">
+            <td colspan="4">
+                <div class="result">
+                    result
+                </div>
+                <div class="numbers">
+                    <div>1</div>
+                    <div>+</div>
+                    <div>2</div>
+                </div>
+            </td>
+        </tr>
+
         <tr>
             <td>num lk</td>
             <td>/</td>
