@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>Who unfollowed you? GitHub</title>
 </head>
 <body>
-    quem me segue
-    <textarea name="abuble" id="txta" cols="30" rows="10"></textarea>
-    quem eu sigo
-    <textarea name="abuble2" id="txta2" cols="30" rows="10"></textarea>
-    <input type="button" value="Calcular" onclick="calcular()">
+    <h1>Who unfollowed you?</h1>
 
-    <div id="resultado">
+    <div class="container">
+        <div class="areas">
+            <h2>quem me segue</h2>
+            <textarea name="abuble" id="txta" cols="50" rows="15"></textarea>
+        </div>
 
+        <div class="areas">
+            <h2>quem eu sigo</h2>
+            <textarea name="abuble2" id="txta2" cols="50" rows="15"></textarea>
+        </div>
+
+        <div class="calcular-button">
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+
+        <div id="resultado"></div>
     </div>
 
     <script>
