@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+    quem me segue
+    <textarea name="abuble" id="txta" cols="30" rows="10"></textarea>
+    quem eu sigo
+    <textarea name="abuble2" id="txta2" cols="30" rows="10"></textarea>
+    <input type="button" value="Calcular" onclick="calcular()">
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        let texto = document.getElementById('txta')
+        let texto2 = document.getElementById('txta2')
+        let res = document.getElementById('resultado')
+        
+
+        
+
+        function calcular() {
+            let matches = texto.value.match(/^@\w+/gm) || []
+            let matches2 = texto2.value.match(/^@\w+/gm) || []
+            let unique = matches2.filter(val => !matches.includes(val));
+            res.innerHTML = unique.join(', ');
+        }
+
+    </script>
+</body>
+</html>

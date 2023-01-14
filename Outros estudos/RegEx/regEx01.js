@@ -1,5 +1,4 @@
-let texto = '@zakk616	Muhammad Zakaria zakk616Full-Stack Software Developer | Dotnet, Flask, Django, Nodejs | Machine Learning BMC Solution  Karachi, Pakistan. @lucky7123	lucky7123 lucky7123	'
-let c = [texto.match(/@\w+\	/g)];
+let texto = '@MosFazli	Mostafa Fazli MosFazli\nAn Ordinary Programmer\n Shahroud university of technology  Mashhad\n\n@LukeberryPi	Lukeberry Pi LukeberryPi\nBritish-brazilian Software Engineer at Hostgator @lucasInutil'
+let matches = texto.match(/^@\w+/gm);
 
-
-console.log(c)
+console.log(matches);
