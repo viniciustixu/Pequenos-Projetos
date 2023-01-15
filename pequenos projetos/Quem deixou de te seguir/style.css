@@ -124,7 +124,7 @@ header a {
 
 iframe {
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 footer {
@@ -152,4 +152,14 @@ footer a {
 footer img {
     max-width: 16px;
     max-height: 16px;
+}
+
+#msg-pequena {
+    color: white;
+    text-shadow: 1px 2px 1px black;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-bottom: 70px;
+    line-height: 0px;
+    
 }
