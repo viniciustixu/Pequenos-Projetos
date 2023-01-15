@@ -25,7 +25,9 @@
             <input type="button" value="Find them" onclick="calcular()" class="botao">
         </div>
 
-        <div id="resultado"></div>
+        <div id="resultado">
+            
+        </div>
     </div>
 
     <script>
@@ -35,14 +37,12 @@
         
 
         
-
         function calcular() {
             let matches = texto.value.match(/^@\w+/gm) || []
             let matches2 = texto2.value.match(/^@\w+/gm) || []
             let unique = matches2.filter(val => !matches.includes(val));
             res.innerHTML = unique.join(', ');
         }
-
     </script>
 </body>
 </html>
