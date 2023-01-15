@@ -41,7 +41,10 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2WfAtskQ514" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
-    <footer><p>Created by Tixu</p>  <a href="https://twitter.com/viniciustixuu" target="_blank"><img src="twitter_2_icon-icons.com_59206.png" alt="icon-twitter"></a></footer>
+    <footer><p>Created by Tixu</p>  
+        <a href="https://twitter.com/viniciustixuu" target="_blank"><img src="twitter_2_icon-icons.com_59206.png" alt="icon-twitter"></a>
+        <a href="https://github.com/viniciustixu" target="_blank"><img src="github-mark-white.png" alt="icon-gitHub"></a>
+    </footer>
 
     <script>
         let texto = document.getElementById('txta')
@@ -54,7 +57,9 @@
             let matches = texto.value.match(/^@\w+/gm) || []
             let matches2 = texto2.value.match(/^@\w+/gm) || []
             let unique = matches2.filter(val => !matches.includes(val));
-            res.innerHTML = unique.join(', ');
+            res.innerHTML = `<strong> These people doesn't follow you back: </strong> <br> <br>`
+            res.innerHTML += unique.join(', ');
+            res.style.background = 'lightgray'
         }
     </script>
 </body>
