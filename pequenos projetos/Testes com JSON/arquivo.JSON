@@ -17,6 +17,12 @@
          "preco":4,
          "tipo":"ruby",
          "origem":"Japão"
+      },
+      {
+         "nome":"Jaca",
+         "preco":7,
+         "tipo":"gigante",
+         "origem":"africa"
       }
    ]
 }

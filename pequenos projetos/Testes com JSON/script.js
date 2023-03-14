@@ -5,6 +5,7 @@ fetch('arquivo.json')
   .then(data => {
     data.itens.forEach(function(item) {
         var div = document.createElement("div");
+        div.classList.add("classe-de-teste");
         var nome = document.createElement("h3");
         var preco = document.createElement("p");
         var tipo = document.createElement("p");
