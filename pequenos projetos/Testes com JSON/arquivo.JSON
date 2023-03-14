@@ -1,19 +1,22 @@
-{"banana": {
-        "fruta": "banana",
-        "preco": 2.5,
-        "tipo": "nanica",
-        "origem": "Brasil"
-    },
- "maca": {
-    "fruta": "maca",
-    "preco": 3,
-    "tipo": "dourada",
-    "origem": "Australia"
- },
- "uva": {
-    "fruta": "uva",
-    "preco": 4,
-    "tipo": "ruby",
-    "origem": "Japão"  
- }
+{
+   "itens":[
+      {
+         "nome":"banana",
+         "preco":2.5,
+         "tipo":"nanica",
+         "origem":"Brasil"
+      },
+      {
+         "nome":"maca",
+         "preco":3,
+         "tipo":"dourada",
+         "origem":"Australia"
+      },
+      {
+         "nome":"uva",
+         "preco":4,
+         "tipo":"ruby",
+         "origem":"Japão"
+      }
+   ]
 }
