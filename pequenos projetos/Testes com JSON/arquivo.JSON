@@ -23,6 +23,12 @@
          "preco":7,
          "tipo":"gigante",
          "origem":"africa"
+      },
+      {
+         "nome":"Goiaba",
+         "preco":4,
+         "tipo":"branca",
+         "origem":"Australia"
       }
    ]
 }
