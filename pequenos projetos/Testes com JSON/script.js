@@ -24,3 +24,11 @@ fetch('arquivo.json')
         container.appendChild(div);
       });
   });
+
+  fetch('arquivo.json')
+  .then(response => response.json())
+  .then(data => {
+    data.itens.forEach(function(item) {
+
+    });
+  });
